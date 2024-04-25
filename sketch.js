@@ -57,7 +57,7 @@ function draw() {
 
     // If clicked, you can redirect or perform another action
     if (hover && mouseIsPressed) {
-      window.open("https://laperzyna.github.io/writeOut/");
+      window.open("https://laperzyna.github.io/text_project/writeOut.html");
     }
   }
 }
