@@ -10,7 +10,7 @@ function setup() {
 function draw() {
   background(0);
   translate(width / 2, height / 2);
-  frameRate(50); 
+  frameRate(35); 
   let totalBoxes = 20;
   let boxesToShow = floor(frameCount / 10);
 
@@ -18,7 +18,7 @@ function draw() {
     // Only drawing to 20
     if (i < boxesToShow) {
       // angle to space out the boxes
-      let angle = i * 137.5;
+      let angle = i * 139.5;
       // spiral effect - :/
       let r = sqrt(i) * 85;
       let x = r * cos(angle);
