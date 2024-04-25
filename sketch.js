@@ -46,13 +46,18 @@ function draw() {
     push();
     stroke('#AF251E');
     strokeWeight(2);
-    fill(hover ? '#FF6347' : '0');
-    // fill(0);
+    stroke(hover ? '0' : '#FF6347');
+    fill(0);
     rect(0, 0, 130, 130);
     fill(255);
     stroke('white');
     textSize(65);
     text(21, 0, -10); // 21st box
     pop();
+
+    // If clicked, you can redirect or perform another action
+    if (hover && mouseIsPressed) {
+      window.open("https://laperzyna.github.io/writeOut/");
+    }
   }
 }
