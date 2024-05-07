@@ -21,11 +21,12 @@ canvas {
   display: block;
 }
 
-#gif {
+.gif {
   display: flex;
   justify-content: center; 
   align-items: center;
 }
+
 
 h2 {
   color: white;
