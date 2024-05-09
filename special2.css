@@ -1,0 +1,133 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden; /* Prevents scrolling */
+}
+
+
+.butterfly {
+    position: absolute; /* Allow free movement anywhere */
+    width: 150px; /* Adjust size as needed */
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.butterfly:nth-of-type(1) { top: 10vh; left: 10vw; animation-name: flyRandom1; }
+.butterfly:nth-of-type(2) { top: 20vh; left: 80vw; animation-name: flyRandom2; }
+.butterfly:nth-of-type(3) { top: 30vh; left: 50vw; animation-name: flyRandom3; }
+.butterfly:nth-of-type(4) { top: 40vh; left: 20vw; animation-name: flyRandom4; }
+.butterfly:nth-of-type(5) { top: 50vh; left: 90vw; animation-name: flyRandom5; }
+.butterfly:nth-of-type(6) { top: 60vh; left: 30vw; animation-name: flyRandom6; }
+.butterfly:nth-of-type(7) { top: 70vh; left: 70vw; animation-name: flyRandom7; }
+.butterfly:nth-of-type(8) { top: 80vh; left: 10vw; animation-name: flyRandom8; }
+.butterfly:nth-of-type(9) { top: 45vh; left: 78vw; animation-name: flyRandom7; }
+.butterfly:nth-of-type(10) { top: 36vh; left: 55vw; animation-name: flyRandom8; }
+
+
+@keyframes flyRandom1 {
+    0%   { transform: translate(50, 50); }
+    20%  { transform: translate(120px, -180px); }
+    40%  { transform: translate(-150px, 160px); }
+    60%  { transform: translate(190px, -120px); }
+    80%  { transform: translate(-100px, 90px); }
+    100% { transform: translate(0, 0); }
+}
+
+@keyframes flyRandom2 {
+    0%   { transform: translate(250 20); }
+    25%  { transform: translate(-200px, 250px); }
+    50%  { transform: translate(230px, -230px); }
+    75%  { transform: translate(-260px, 200px); }
+    100% { transform: translate(0, 0); }
+}
+
+@keyframes flyRandom3 {
+    0%   { transform: translate(100, 100); }
+    15%  { transform: translate(-90px, 80px); }
+    30%  { transform: translate(160px, -170px); }
+    45%  { transform: translate(-140px, 150px); }
+    60%  { transform: translate(130px, -110px); }
+    75%  { transform: translate(-120px, 100px); }
+    90%  { transform: translate(110px, -90px); }
+    100% { transform: translate(100, 100); }
+}
+
+@keyframes flyRandom4 {
+    0%   { transform: translate(100, 100); }
+    15%  { transform: translate(-56px, 39px); }
+    30%  { transform: translate(129px, -133px); }
+    45%  { transform: translate(-99px, 175px); }
+    60%  { transform: translate(200px, -10px); }
+    75%  { transform: translate(-120px, 100px); }
+    90%  { transform: translate(142px, -64px); }
+    100% { transform: translate(234, 10); }
+}
+
+@keyframes flyRandom5 {
+    0%   { transform: translate(0, 0); }
+    20%  { transform: translate(300px, -100px); }
+    40%  { transform: translate(-250px, 200px); }
+    60%  { transform: translate(180px, -220px); }
+    80%  { transform: translate(-90px, 120px); }
+    100% { transform: translate(0, 0); }
+}
+
+@keyframes flyRandom6 {
+    0%   { transform: translate(0, 0); }
+    16%  { transform: translate(-100px, 300px); }
+    33%  { transform: translate(200px, -150px); }
+    50%  { transform: translate(-180px, 100px); }
+    67%  { transform: translate(230px, -280px); }
+    84%  { transform: translate(-240px, 230px); }
+    100% { transform: translate(0, 0); }
+}
+
+@keyframes flyRandom7 {
+    0%   { transform: translate(0, 0); }
+    14%  { transform: translate(120px, -90px); }
+    28%  { transform: translate(-130px, 160px); }
+    42%  { transform: translate(140px, -180px); }
+    56%  { transform: translate(-160px, 190px); }
+    70%  { transform: translate(170px, -200px); }
+    84%  { transform: translate(-180px, 210px); }
+    100% { transform: translate(0, 0); }
+}
+
+@keyframes flyRandom8 {
+    0%   { transform: translate(0, 0); }
+    12%  { transform: translate(-50px, 250px); }
+    25%  { transform: translate(250px, -50px); }
+    37%  { transform: translate(-200px, 150px); }
+    50%  { transform: translate(150px, -200px); }
+    62%  { transform: translate(-100px, 100px); }
+    75%  { transform: translate(50px, -250px); }
+    87%  { transform: translate(0px, 300px); }
+    100% { transform: translate(0, 0); }
+}
+
+@keyframes flyRandom9 {
+    0%   { transform: translate(0, 0); }
+    10%  { transform: translate(-20vw, 10vh); }
+    20%  { transform: translate(50vw, -30vh); }
+    30%  { transform: translate(-10vw, 40vh); }
+    40%  { transform: translate(70vw, -50vh); }
+    50%  { transform: translate(-80vw, 60vh); }
+    60%  { transform: translate(90vw, -70vh); }
+    70%  { transform: translate(-40vw, 20vh); }
+    80%  { transform: translate(30vw, -10vh); }
+    90%  { transform: translate(-60vw, 50vh); }
+    100% { transform: translate(0, 0); }
+}
+
+@keyframes flyRandom10 {
+    0%   { transform: translate(0, 0); }
+    15%  { transform: translate(30vw, -25vh); }
+    30%  { transform: translate(-45vw, 35vh); }
+    45%  { transform: translate(55vw, -45vh); }
+    60%  { transform: translate(-65vw, 55vh); }
+    75%  { transform: translate(75vw, -65vh); }
+    90%  { transform: translate(-85vw, 75vh); }
+    100% { transform: translate(0, 0); }
+}
+
