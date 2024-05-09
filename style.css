@@ -21,7 +21,7 @@ canvas {
   display: block;
 }
 
-.gif {
+#gif {
   display: flex;
   justify-content: center; 
   align-items: center;
@@ -141,4 +141,21 @@ h1 a:hover {
   font-size: 80px;
 }
 
+#text-container {
+  position: absolute;
+  font-family: "Caveat", cursive;
+  padding: 2% 2%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 45px;
+  z-index: 1;
+  color: rgb(255, 0, 0);
+}
 
+.gif-special {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
