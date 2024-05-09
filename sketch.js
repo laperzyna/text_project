@@ -73,11 +73,11 @@ function draw() {
 }
 
 function keyPressed() {
-  if (keyCode === 32) {  // If the space bar is pressed
+  if (keyCode === 32) { 
     if (showPrompt) {
-      showPrompt = false; // Stop showing the prompt
+      showPrompt = false;
     }
     currentBox++;
-    currentBox = min(currentBox, 21);  // Ensure it doesn't exceed 21
+    currentBox = min(currentBox, 21);
   }
 }
