@@ -8,7 +8,6 @@ canvas {
     background: black;
     width: 100vw;
     height: 100vh;
-    /* padding-top: 3%; */
     z-index: 2;
 }
 
@@ -24,3 +23,31 @@ canvas {
     z-index: 1;
     color: rgb(255, 0, 0);
 }
+
+@keyframes slideDiagonally {
+    from {
+        left: 0;
+        top: 100vh;
+    }
+    to {
+        left: 100vw;
+        top: 0;
+    }
+}
+
+/* #butterfly {
+    position: fixed;
+    width: 150px;
+    width: 200px;
+    height: 200px;
+    animation: slideDiagonally 20s ease-in-out forwards;
+} */
+
+#butterfly {
+    position: fixed;
+    width: 150px;
+    top: 100vh; /* Start below the viewport */
+    left: 0; /* Start from the left edge */
+    animation: none; /* Initially, do not animate */
+}
+

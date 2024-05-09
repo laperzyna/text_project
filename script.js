@@ -34,16 +34,22 @@ function displayNextWord() {
         currentWord++;
         setTimeout(displayNextWord, 500);
     } else if (currentSentence < sentences.length - 1) {
-        // Transition out and start next sentence
+        // start next sentence
         textContainer.style.transition = 'opacity 2s';
         textContainer.style.opacity = '0';
         setTimeout(() => {
-            textContainer.innerHTML = ''; // Clear the container
-            textContainer.style.opacity = '1'; // Reset opacity
+            textContainer.innerHTML = '';
+            textContainer.style.opacity = '1';
             currentSentence++;
             currentWord = 0;
-            displayNextWord(); // Start next sentence
+             // start next sentence
+            displayNextWord();
         }, 2000);
+    } else {
+        // This is the last sentence, start the butterfly animation
+        if (!document.getElementById('butterfly').style.animation) {
+            document.getElementById('butterfly').style.animation = 'slideDiagonally 6s ease-in-out infinite';
+        }
     }
 }
 
