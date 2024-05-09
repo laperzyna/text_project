@@ -1,13 +1,37 @@
+
+
 html, body {
     height: 100%;
     margin: 0;
-    overflow: hidden; /* Prevents scrolling */
+    overflow: hidden;
+    cursor: url('./Mariposa2.gif'), auto;
+}
+
+main {
+    height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; 
+    text-align: center;
+}
+
+
+.sentence-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: #6AA1DA;
+    text-align: center;
+    width: 100%;
 }
 
 
 .butterfly {
-    position: absolute; /* Allow free movement anywhere */
-    width: 150px; /* Adjust size as needed */
+    position: absolute; 
+    width: 150px; 
     animation-duration: 10s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
@@ -130,4 +154,3 @@ html, body {
     90%  { transform: translate(-85vw, 75vh); }
     100% { transform: translate(0, 0); }
 }
-

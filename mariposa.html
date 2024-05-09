@@ -10,6 +10,7 @@
 
 <body>
     <main>
+        <div class="sentence-container"></div>
         <div>
             <img src="./Mariposa2.gif" class="butterfly" alt="butterfly gif" />
             <img src="./Mariposa2.gif" class="butterfly" alt="butterfly gif" />
@@ -22,7 +23,35 @@
             <img src="./Mariposa2.gif" class="butterfly" alt="butterfly gif" />
             <img src="./Mariposa2.gif" class="butterfly" alt="butterfly gif" />
         </div>
+        <a href="./index.html"><span id="special-arrow">&#8702;</span></a>
     </main>    
 </body>
+<script>
+    const sentences = [
+        "Mariposas sueltas por la calle",
+        "Para verlas tienes que salir",
+        "Míralas, no pierdas detalle",
+        "Habrá quien te falle",
+        "Pero yo siempre estoy ahí"
+    ];
+    let index = 0;
+    const container = document.querySelector('.sentence-container');
+
+    function displayNextSentence() {
+        if (index < sentences.length) {
+            const sentenceDiv = document.createElement('div'); 
+            sentenceDiv.textContent = sentences[index]; 
+            container.appendChild(sentenceDiv);
+            index++;
+        } else {
+            clearInterval(intervalId);
+        }
+    }
+
+    const intervalId = setInterval(displayNextSentence, 2000);
+
+
+</script>
+
 
 </html>
